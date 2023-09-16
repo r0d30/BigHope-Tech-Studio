@@ -1,37 +1,78 @@
 body {
-    margin: auto
-}
-.container {
     margin: auto;
-    background-color: rgb(0, 0, 0);
+}
+
+.container {
     width: 100%;
     height: 100vh;
-    display:flex;
-    justify-content: space-evenly
-}
-/* Styles pour box1 */
-.box1 {
-    width: 50%;
-    height: 100vh;
-    background-color: rgb(46, 0, 88);
-    border: 10px solid;
-    border-right: 5px solid;
-    border-color: rgb(0, 0, 0);
-    border-radius: 5%;
-    box-sizing: border-box;
-    padding: 100px
-
+    background-color: black;
+    margin: auto;
 }
 
-/* Styles pour box2 */
-.box2 {
-    width: 50%;
-    height: 100vh;
-    background-color: rgb(167, 45, 0);
-    border: 10px solid;
-    border-left: 5px solid;
-    border-color: rgb(0, 0, 0);
-    border-radius: 5%;
+.interface1 {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(158, 158, 158);
+    border: 1px solid black; /* Ajoutez le style de bordure (solid) et la couleur (noir) */
     box-sizing: border-box;
-    padding: 100px;
+}
+
+.contenu {
+    width: 100%;
+    height: calc(100% - 120px);
+    display: flex;
+    box-sizing: border-box;
+}
+
+.interface2 {
+    width: calc(100% / 3);
+    height: calc(100vh - 120px);
+    background-color: rgb(89, 89, 89);
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.interface3 {
+    width: calc(100% / 3);
+    height: calc(100vh - 120px);
+    background-color: rgb(48, 48, 48);
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.interface4 {
+    width: calc(100% / 3);
+    height: calc(100vh - 120px);
+    background-color: rgb(89, 89, 89);
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.interface5 {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(158, 158, 158);
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+#menuButton {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#sideMenu {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    transition: left 0.3s ease;
 }
