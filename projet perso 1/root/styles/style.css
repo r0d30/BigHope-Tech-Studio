@@ -1,5 +1,5 @@
 body {
-    margin: auto;
+    margin: 0px;
 }
 
 .container {
@@ -55,24 +55,35 @@ body {
     border: 1px solid black;
     box-sizing: border-box;
 }
-#menuButton {
-    position: fixed;
-    left: 10px;
-    top: 10px;
-    z-index: 2;
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-#sideMenu {
-    position: fixed;
-    left: -300px;
-    top: 0;
-    width: 300px;
+#burger{
+    /* width: 15px; */
+    /* height: 15px; */
+    border: 1px solid black;
+  }
+  #menu_links{
+    display: none;
+    border: 1px solid black;
+    right: 200px;
+  }
+  #menu{
+    background-color: darkcyan;
     height: 100vh;
-    background-color: #333;
-    color: white;
-    transition: left 0.3s ease;
-}
+    width: min-content;
+    border: 1px solid black;
+    display: flex;
+  }
+  #menu a{
+    /* text-decoration: none; */
+    color: whitesmoke;
+    display: block;
+    padding: 1em;
+  }
+  #menu #menu_link:hover a{
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  #menu_bars{
+    text-align: bottom;
+  }
+  #burger:checked ~ #menu_links{
+    display: block;
+  }
